@@ -50,6 +50,7 @@ public Color getColor() {
 
 return Color.GREEN;
 }
+
 public String toString() {
 return "F";
 }
