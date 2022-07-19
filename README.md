@@ -26,35 +26,10 @@ simulation, each critter is asked for 3 pieces of information:
 1. How should it act?
 2. What color is it?
 3. What string represents that critter?
+
 These 3 pieces of information are provided by 3 methods present in each Critter class. You will be
 responsible for overriding these methods and programming their appropriate behavior:
 
-public Action getMove(CritterInfo info) {
-...
-}
-public Color getColor() {
-...
-}
-public String toString() {
-...
-}
-For example, here is a Food class who would always appear as a green “F” that would try to infect
-whatever critter is in front of it:
-
-import java.awt.*;
-public class Food extends Critter {
-public Action getMove(CritterInfo info) {
-return Action.INFECT;
-}
-public Color getColor() {
-
-return Color.GREEN;
-}
-
-public String toString() {
-return "F";
-}
-}
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Below are some suggestions for how you can test your critters:
